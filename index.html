@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Essentials — Modern Web Development</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span><span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-close" id="navClose" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <a href="#contact" class="btn-hire">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>Available for new projects
+      </div>
+      <h1 class="hero-headline reveal">
+        Building Modern<br/>
+        <span class="gradient-text">Websites</span> for<br/>
+        Growing Businesses
+      </h1>
+      <p class="hero-sub reveal">
+        I craft fast, beautiful, conversion-focused digital experiences for small businesses, 
+        schools, and professionals who want to stand out online.
+      </p>
+      <div class="hero-ctas reveal">
+        <a href="#portfolio" class="btn-primary">
+          <i class="fas fa-eye"></i> View My Work
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <i class="fas fa-rocket"></i> Start a Project
+        </a>
+      </div>
+
+      <div class="tech-icons reveal">
+        <div class="tech-pill"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="tech-pill"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="tech-pill"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="tech-pill"><i class="fab fa-python"></i> Python</div>
+      </div>
+    </div>
+
+    <div class="hero-stats reveal">
+      <div class="stat-item">
+        <span class="stat-num" data-target="12">0</span><span>+</span>
+        <p>Projects Done</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="8">0</span><span>+</span>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="2">0</span><span>+</span>
+        <p>Years Experience</p>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2>Developer. Designer. <span class="gradient-text">Problem Solver.</span></h2>
+        <p>I help businesses grow by building beautiful, functional digital products that turn visitors into customers.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-card-wrap">
+            <div class="about-img-card">
+              <div class="about-avatar">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="about-floating floating-badge-1">
+                <i class="fas fa-star"></i> 4.0 Rating
+              </div>
+              <div class="about-floating floating-badge-2">
+                <i class="fas fa-check-circle"></i> 12+ Projects
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <h3>Hi, I'm the developer behind <span class="gradient-text">Coding Essentials</span></h3>
+          <p>
+            With a passion for clean code and stunning design, I build digital solutions that help small businesses, schools, and professionals establish a powerful online presence. Every project I take on is crafted with strategy, creativity, and technical excellence.
+          </p>
+          <p>
+            Whether you need a sleek business website, a creative portfolio, or a full brand identity — I deliver work that drives real results.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span><i class="fab fa-html5"></i> HTML5</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span><i class="fab fa-js"></i> JavaScript</span>
+                <span>76%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="76"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span><i class="fab fa-python"></i> Python</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span><i class="fas fa-palette"></i> UI/UX Design</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span><i class="fas fa-pen-nib"></i> Graphic Design</span>
+                <span>82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span><i class="fas fa-share-alt"></i> Social Media</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Do</span>
+        <h2>Services Built to <span class="gradient-text">Grow Your Business</span></h2>
+        <p>From concept to launch, I offer end-to-end digital services tailored for small businesses and professionals.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Website Development</h3>
+          <p>Custom-built, fast, and responsive websites using clean HTML, CSS, and JavaScript. No templates — every line written for you.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Mobile-first design</li>
+            <li><i class="fas fa-check"></i> SEO optimized</li>
+            <li><i class="fas fa-check"></i> Fast load times</li>
+          </ul>
+          <a href="#contact" class="service-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <i class="fas fa-store"></i>
+          </div>
+          <h3>Business Websites</h3>
+          <p>Professional websites that build trust, showcase your services, and convert visitors into paying customers.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Lead capture forms</li>
+            <li><i class="fas fa-check"></i> Google-ready setup</li>
+            <li><i class="fas fa-check"></i> Brand integration</li>
+          </ul>
+          <a href="#contact" class="service-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>Portfolio Websites</h3>
+          <p>Stunning personal portfolio sites that showcase your work, skills, and personality — designed to impress clients and employers.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Project showcases</li>
+            <li><i class="fas fa-check"></i> Custom animations</li>
+            <li><i class="fas fa-check"></i> Contact integration</li>
+          </ul>
+          <a href="#contact" class="service-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Eye-catching logos, brand identities, social media graphics, and marketing materials that make your brand unforgettable.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Logo design</li>
+            <li><i class="fas fa-check"></i> Brand kits</li>
+            <li><i class="fas fa-check"></i> Print & digital</li>
+          </ul>
+          <a href="#contact" class="service-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <i class="fas fa-share-nodes"></i>
+          </div>
+          <h3>Social Media Management</h3>
+          <p>Consistent, engaging content strategies that grow your audience, boost engagement, and drive traffic to your business.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Content creation</li>
+            <li><i class="fas fa-check"></i> Scheduling & strategy</li>
+            <li><i class="fas fa-check"></i> Analytics & growth</li>
+          </ul>
+          <a href="#contact" class="service-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTFOLIO ===================== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Work</span>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p>A selection of recent projects across web development, design, and branding.</p>
+      </div>
+
+      <div class="filter-btns reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="websites">Websites</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card reveal" data-category="websites">
+          <div class="portfolio-img">
+            <div class="portfolio-placeholder" style="--c1:#1a1a2e;--c2:#16213e;">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="portfolio-overlay">
+              <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <h3>Restaurant Landing Page</h3>
+            <p>A modern, elegant website for a local restaurant with online menu and booking.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="websites">
+          <div class="portfolio-img">
+            <div class="portfolio-placeholder" style="--c1:#0f2027;--c2:#203a43;">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="portfolio-overlay">
+              <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tags">
+              <span>HTML</span><span>CSS</span><span>Python</span>
+            </div>
+            <h3>School Portal Website</h3>
+            <p>Full institutional website for a private school with admissions and news.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="design">
+          <div class="portfolio-img">
+            <div class="portfolio-placeholder" style="--c1:#1a0533;--c2:#2d0a4e;">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="portfolio-overlay">
+              <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tags">
+              <span>UI Design</span><span>Figma</span>
+            </div>
+            <h3>Fitness App UI Design</h3>
+            <p>Clean, motivating app design for a personal fitness tracking application.</p>
+          </div>
+        </div>
+
+        <!-- Removed empty/placeholder portfolio items without content -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">How I Work</span>
+        <h2>My <span class="gradient-text">Process</span></h2>
+        <p>A clear, collaborative workflow that keeps you informed from idea to launch.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-num">01</div>
+          <div class="step-icon"><i class="fas fa-search"></i></div>
+          <h3>Discovery</h3>
+          <p>We discuss your goals, audience, and vision. I research your industry to understand what makes you unique.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-num">02</div>
+          <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h3>Planning</h3>
+          <p>I create a sitemap, wireframes, and a project plan. You approve everything before a single line of code is written.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-num">03</div>
+          <div class="step-icon"><i class="fas fa-code"></i></div>
+          <h3>Development</h3>
+          <p>Clean, optimized code built from scratch. Regular updates keep you in the loop throughout the build.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-num">04</div>
+          <div class="step-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Launch</h3>
+          <p>Testing, optimization, and go-live. I ensure your site is fast, secure, and ready to make a great first impression.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Investment</span>
+        <h2>Simple, Transparent <span class="gradient-text">Pricing</span></h2>
+        <p>No hidden fees. No surprises. Just straightforward packages designed to fit your needs and budget.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card reveal">
+          <div class="pricing-badge">Starter</div>
+          <div class="pricing-price">
+            <span class="price-currency"></span>
+            <span class="price-amount"></span>
+          </div>
+          <p class="price-sub">Perfect for individuals & startups</p>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> 1-4 Page Website</li>
+            <li><i class="fas fa-check"></i> Mobile Responsive</li>
+            <li><i class="fas fa-check"></i> Contact Form</li>
+            <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+            <li><i class="fas fa-check"></i> 7-Day Delivery</li>
+            <li class="muted"><i class="fas fa-times"></i> E-commerce</li>
+            <li class="muted"><i class="fas fa-times"></i> Custom Animations</li>
+          </ul>
+          <a href="#contact" class="pricing-btn">Get Started</a>
+        </div>
+
+        <div class="pricing-card featured reveal">
+          <div class="pricing-popular">Most Popular</div>
+          <div class="pricing-badge">Professional</div>
+          <div class="pricing-price">
+            <span class="price-currency"></span>
+            <span class="price-amount"></span>
+          </div>
+          <p class="price-sub">Best for growing businesses</p>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> 5-8  Page Website</li>
+            <li><i class="fas fa-check"></i> Mobile Responsive</li>
+            <li><i class="fas fa-check"></i> Contact & Lead Forms</li>
+            <li><i class="fas fa-check"></i> Full SEO Optimization</li>
+            <li><i class="fas fa-check"></i> Custom Animations</li>
+            <li><i class="fas fa-check"></i> Social Media Setup</li>
+            <li><i class="fas fa-check"></i> 14-Day Delivery</li>
+          </ul>
+          <a href="#contact" class="pricing-btn">Get Started</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <div class="pricing-badge">Business</div>
+          <div class="pricing-price">
+            <span class="price-currency"></span>
+            <span class="price-amount"></span>
+          </div>
+          <p class="price-sub">For established companies</p>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> 9+ Pages</li>
+            <li><i class="fas fa-check"></i> Full Brand Identity</li>
+            <li><i class="fas fa-check"></i> E-commerce Ready</li>
+            <li><i class="fas fa-check"></i> Advanced SEO</li>
+            <li><i class="fas fa-check"></i> Social Media Management</li>
+            <li><i class="fas fa-check"></i> 6 Month Support</li>
+            <li><i class="fas fa-check"></i> Priority Delivery</li>
+          </ul>
+          <a href="#contact" class="pricing-btn">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Let's Build Something <span class="gradient-text">Great Together</span></h2>
+        <p>Have a project in mind? Tell me about it — I respond within 24 hours.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:codingessentials60@gmail.com">codingessentials60@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/263785711275" target="_blank">+263 785 711 275</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Location</strong>
+              <span>Zimbabwe (Remote-Friendly)</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/263785711275" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xreonqow" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="project">Project Type</label>
+            <select id="project" name="project" required>
+              <option value="">Select a service</option>
+              <option value="website">Website Development</option>
+              <option value="business">Business Website</option>
+              <option value="portfolio">Portfolio Website</option>
+              <option value="design">Graphic Design</option>
+              <option value="social">Social Media Management</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+            <span class="form-error" id="projectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn-primary form-submit" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent! I'll be in touch within 24 hours.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span><span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Building modern digital experiences for businesses that want to grow and stand out online.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Website Development</a></li>
+            <li><a href="#services">Business Websites</a></li>
+            <li><a href="#services">Portfolio Sites</a></li>
+            <li><a href="#services">Graphic Design</a></li>
+            <li><a href="#services">Social Media</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-envelope"></i> hello@codingessentials.co.za</p>
+          <p><i class="fab fa-whatsapp"></i> +263 785 711 275</p>
+          <p><i class="fas fa-map-marker-alt"></i> Zimbabwe</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Coding Essentials. All rights reserved. Built with <i class="fas fa-heart"></i> and clean code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
